@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://i.pinimg.com/originals/48/bb/c2/48bbc26d16d6c5cb0984146974215aca.jpg);
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1108.jpg?w=740);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,13 +8,13 @@ body {
 
 .container {
    height: 200px;
-   width: 480px;
-   color: white;
-   font-size: 25px; 
+   width: 550px;
+   color: black;
+   font-size: 20px; 
    text-align: center;
    position: fixed;
    top: 200px;
-   left: 600px;
+   left: 120px;
 }
 
 .container-img {
@@ -23,5 +23,14 @@ height: 100px;
 width: 100px;
 position: fixed;
 top: 85px;
-left: 750px;
+left: 300px;
+}
+
+.containers {
+display: flex;
+height: 250px;
+width: 250px;
+position: fixed;
+top: 120px;
+left: 700px;
 }
