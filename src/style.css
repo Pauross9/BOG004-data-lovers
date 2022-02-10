@@ -1,0 +1,27 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/48/bb/c2/48bbc26d16d6c5cb0984146974215aca.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container {
+   height: 200px;
+   width: 480px;
+   color: white;
+   font-size: 25px; 
+   text-align: center;
+   position: fixed;
+   top: 200px;
+   left: 600px;
+}
+
+.container-img {
+display: flex;
+height: 100px;
+width: 100px;
+position: fixed;
+top: 85px;
+left: 750px;
+}
