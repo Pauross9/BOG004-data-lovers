@@ -34,3 +34,21 @@ position: fixed;
 top: 120px;
 left: 700px;
 }
+
+#filmography {
+    display: flex;
+    height: 30px;
+    width: 110px;
+    position: fixed;
+    top: 30px;
+    left: 220px;
+}
+
+#characters {
+    display: flex;
+    height: 30px;
+    width: 110px;
+    position: fixed;
+    top: 30px;
+    left: 420px;
+}
