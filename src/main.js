@@ -1,6 +1,8 @@
-//import { example } from './data.js';
+import filterData  from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/ghibli/ghibli.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+// import data from './data/ghibli/ghibli.js';
 
-console.log("data ghibli", data);
+
+let resultado = filterData(data) 
+console.log(resultado)
