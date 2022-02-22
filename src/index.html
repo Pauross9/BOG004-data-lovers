@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <header id="banner">
-      <button type="button" id="btn-1" onclick="showPage()">HOME</button>
-      <button type="button" id="btn-2" onclick="showPage()">FILMOGRAPHY</button>
-      <button type="button" id="btn-3" onclick="showPage()">CHARACTERS</button>
+<p>WORLD OF GHIBLI</p>
     </header>
 
 <main>
@@ -26,17 +25,27 @@
 <div class="container" >
     Studio Ghibli was founded in 1985 by animated film directors Isao Takahata and Hayao Miyazaki, and has produced twenty-two feature-length films. Most Studio Ghibli films ranked number one at the box office in Japan in the year in which they were released. Studio Ghibli films have garnered numerous awards and critical acclaim from film critics and animation specialists around the world.
 </div>
-  </section>
+<section>
+<select name="directors" id="director-select">
+    <option value="filter-directors">--Filter by Director--</option>
+    <option value="Goro-Miyazaki">Gorō Miyazaki</option>
+    <option value="Hayao-Miyazaki">Hayao Miyazaki</option>
+    <option value="Hirosama-Yonebayashi">Hirosama Yonebayashi</option>
+    <option value="Hiroyuki-Morita">Hiroyuki Morita</option>
+    <option value="Isao-Takahata">Isao Takahata</option>
+    <option value="Yoshifumi-Kondo">Yoshifumi Kondō</option>
+</select>
 
+<section>
+<select name="orderAlpha" id="alpha-select">
+<option value="order-alpha">--Order By--</option>
+<option value="A-Z">Order By (A-Z)</option>
+<option value="Z-A">Order By (Z-A)</option>
+</section>
 
-    <section id="filmography">
-    </section>
-
-
-    <section id="characters">
-    <p>HOLAAA</p>
-    </section>
-
+<section>
+  <input type="text" id="search-film" placeholder="Search Film">
+</section>
 
 
   </main>
