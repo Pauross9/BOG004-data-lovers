@@ -12,80 +12,74 @@ body {
    color: black;
    font-size: 20px; 
    text-align: center;
-   position: fixed;
-   top: 260px;
-   left: 120px;
+   position: relative;
+   top: -150px;
+   left: 35px;
 }
 
 .container-img {
 display: flex;
 height: 100px;
 width: 100px;
-position: fixed;
-top: 130px;
-left: 300px;
+position: relative;
+top: 35px;
+left: 200px;
 }
 
 .containers {
 display: flex;
 height: 250px;
 width: 250px;
-position: fixed;
-top: 165px;
-left: 700px;
+position: relative;
+top: 10px;
+left:700px;
 }
 
-#banner {
-    display: "flex";
-    background: #81c9fa;
-    height: 10%;
-    width: 100%;
-    position: fixed;
-    top: 30px ;
-    left: 0px ;
-  
-  }
 p {
-    position: fixed;
+    position: relative;
     font-size: 50px ;
-    top: -10px ;
-    left: 450px ;
+    top: 10px;
+    left: 0px;
     font-family:  'Josefin Sans', sans-serif;
+    text-align: center;
     
 }
 #director-select {
-    position: fixed;
-    top: 500px ;
-    left: 200px ;
+    position: relative;
+    top: 0;
+    left: 100px;
     background-color:rgba(0, 0, 0, 0.363);
     color: white;
   
 }
 
 #alpha-select {
-    position: fixed;
-    top: 500px ;
+    position: relative;
+    top: -20px;
     left: 400px ;
     background-color:rgba(0, 0, 0, 0.363);
     color: white;
 }
 
 #search-film {
-    position: fixed;
-    top: 500px ;
+    position: relative;
+    top: -20px ;
     left: 600px ;
     
 }
 
 .container-of-films{
     display: flex;
-    flex-wrap: wrap-reverse;
-    align-content: stretch;
-    padding: 10px;
-    background-color: rgba(128, 128, 128, 0.623);
+    flex-wrap: nowrap;
+    padding: 5px;
+    background-color: rgba(61, 204, 137, 0.473);
+    height: 100%;
+    width:100% ;
+    top: 0px;
+    left: 20px;
     margin: 45px;
     text-align: center;
-    line-height: 10px;
+    line-height: 5px;
     border: 2px;
    
 }
@@ -93,6 +87,7 @@ p {
     height: 300px;
     width:250px ;
 }
+
 .title{
 
 }
