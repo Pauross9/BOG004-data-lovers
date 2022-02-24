@@ -77,3 +77,30 @@ p {
     
 }
 
+.container-of-films{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-content: stretch;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.623);
+    margin: 45px;
+    text-align: center;
+    line-height: 10px;
+    border: 2px;
+   
+}
+.poster{
+    height: 300px;
+    width:250px ;
+}
+.title{
+
+}
+
+.director{
+
+}
+
+.release_date{
+
+}
