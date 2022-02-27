@@ -4,10 +4,20 @@ import data from './data/ghibli/ghibli.js';
 
 const dataFilms = data.films
 
-filterData(dataFilms) 
-sortData(dataFilms)
+const selectDirector = document.getElementById("director-select");
+selectDirector.addEventListener("change", () => {
+    const directorSelect = selectDirector.value;
+    drawData(filterData(dataFilms,directorSelect));
+})
 
-
+const selectOrder = document.getElementById("alpha-select");
+selectOrder.addEventListener("change",() => {
+    if(selectOrder.value === "A-Z") {
+        drawData(sortData(dataFilms))
+    }else{
+        drawData(sortData(dataFilms).reverse())
+    }
+})
 //INFO DE CARTAS
 let showCard = document.getElementById("cards");
 const infoCard = (films) => {
