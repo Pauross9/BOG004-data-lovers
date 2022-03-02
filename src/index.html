@@ -29,13 +29,14 @@
 <section>
 <select name="directors" id="director-select">
     <option value="filter-directors">--Filter by Director--</option>
-    <option value="Goro-Miyazaki">Gorō Miyazaki</option>
-    <option value="Hayao-Miyazaki">Hayao Miyazaki</option>
-    <option value="Hirosama-Yonebayashi">Hirosama Yonebayashi</option>
-    <option value="Hiroyuki-Morita">Hiroyuki Morita</option>
-    <option value="Isao-Takahata">Isao Takahata</option>
-    <option value="Yoshifumi-Kondo">Yoshifumi Kondō</option>
+    <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+    <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+    <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+    <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+    <option value="Isao Takahata">Isao Takahata</option>
+    <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
 </select>
+
 
 <section>
 <select name="orderAlpha" id="alpha-select">
@@ -46,15 +47,14 @@
 
 
 <section>
-  <input type="text" id="search-film" placeholder="Search Film" maxlength="35">
+  <input type="text" id="search-film" class="search" placeholder="Search Film" maxlength="35">
 </section>
-
-
   </main>
-
+<!--Container of modal-->
+<div class="modal" id="container-modal"></div>
 <!--Container of cards-->
  </body> 
-    <div id="root"></div>
+    <div class="root" id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
 </html>

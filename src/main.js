@@ -1,8 +1,19 @@
-import {filterData, sortData}  from './data.js';
+import {filterData,sortData,filterFilm}  from './data.js';
 // import data from './data/lol/lol.js';
 import data from './data/ghibli/ghibli.js';
 
 const dataFilms = data.films
+let search = document.getElementById("search-film")
+search.addEventListener("change", (event) => {
+    console.log(event.target.value)
+drawData(filterFilm(dataFilms,event.target.value))
+
+})
+
+
+
+
+
 
 const selectDirector = document.getElementById("director-select");
 selectDirector.addEventListener("change", () => {
@@ -17,6 +28,7 @@ selectOrder.addEventListener("change",() => {
     }else{
         drawData(sortData(dataFilms).reverse())
     }
+    
 })
 //INFO DE CARTAS
 let showCard = document.getElementById("cards");
@@ -43,3 +55,8 @@ const drawData = (data) => {
     document.getElementById("root").innerHTML= printData
     }
     drawData(dataFilms);
+
+    let showModal = document.getElementById("container-modal");
+    const infoModal = (films) => {
+
+    }
