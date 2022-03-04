@@ -31,19 +31,22 @@ selectOrder.addEventListener("change",() => {
     
 })
 //INFO DE CARTAS
-let showCard = document.getElementById("cards");
 const infoCard = (films) => {
     return  `
     <section class="container-of-films">
+    <div class= "front">
     <figure class="img-card">                           
         <img alt="Poster" id="poster" class="poster" src="${films.poster}">
     </figure>
-    <section class="container-cards">
         <h2 id="title" class="card-title">${films.title}</h2>
-        <h3 id="director" class="card-director">Director: ${films.director}</h3>
-        <h3 id="year" class="card-year">${films.release_date}</h3>
-    </section>
-    </section>`
+        <h3 id="score" class="card-score">Score: ${films.rt_score}</h3>
+    <div class= "back">
+    <h3 id="director" class="card-director">Director: ${films.director}</h3>
+    <h3 id="year" class="card-year">Realease Date: ${films.release_date}</h3>
+    <h3 id="description" class="card-description">${films.description}</h3>
+    </div>
+    </div>
+    </section> `
 }
 
 //FUNCION PARA PINTAR CARTAS
@@ -54,9 +57,6 @@ const drawData = (data) => {
     })    
     document.getElementById("root").innerHTML= printData
     }
-    drawData(dataFilms);
-
-    let showModal = document.getElementById("container-modal");
-    const infoModal = (films) => {
-
-    }
+    drawData(dataFilms);   
+    
+    
