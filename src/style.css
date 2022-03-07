@@ -1,3 +1,6 @@
+@media (max-width:720px){
+
+}
 body {
     background-image: url(https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1108.jpg?w=740);
     background-position: center center;
@@ -5,34 +8,63 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
 }
-
+/*txt Ghibli*/
 .container {
+   display: flex;
+   float: left;
    height: 200px;
-   width: 550px;
+   width: 35%;
    color: black;
-   font-size: 20px; 
+   font-size: 18px; 
    text-align: center;
-   position: relative;
-   top: -150px;
-   left: 35px;
+/*   position: relative;
+   margin-left: 200px;
+   margin-top: 8%;
+   /*top: -150px;
+   left: 35px;*/
 }
-
+/*Logo ghibli Totoro*/
 .container-img {
-display: flex;
-height: 100px;
-width: 100px;
-position: relative;
+width: 30%;
+min-width: 100px;
+/*position: static;
 top: 35px;
-left: 200px;
-}
+left: 500px;
+padding-bottom: 0px;*/
 
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorDescripcion{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorFiltros{
+    display: flex;
+    width: 60vw;
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+/*img personajes*/
 .containers {
 display: flex;
+float: right;
 height: 250px;
-width: 250px;
-position: relative;
-top: 10px;
-left:700px;
+width: 40%;
+margin-left: 100px;
+/*position: relative;
+margin-right: 100px;
+margin-top: 1%;*/
+
 }
 
 p {
@@ -47,26 +79,26 @@ p {
     
 }
 #director-select {
-    position: relative;
+    /*position: relative;
     top: 0;
-    left: 100px;
+    left: 100px;*/
     background-color:rgba(0, 0, 0, 0.363);
     color: white;
   
 }
 
 #alpha-select {
-    position: relative;
+    /*position: relative;
     top: -20px;
-    left: 400px ;
+    left: 400px ;*/
     background-color:rgba(0, 0, 0, 0.363);
     color: white;
 }
 
 #search-film {
-    position: relative;
+    /*position: relative;
     top: -20px ;
-    left: 600px ;
+    left: 600px ;*/
     
 }
 
