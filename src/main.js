@@ -10,11 +10,6 @@ drawData(filterFilm(dataFilms,event.target.value))
 
 })
 
-
-
-
-
-
 const selectDirector = document.getElementById("director-select");
 selectDirector.addEventListener("change", () => {
     const directorSelect = selectDirector.value;
