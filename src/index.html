@@ -2,19 +2,61 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Data Lovers Ghibli</title>
     <link rel="stylesheet" href="style.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    
-    <div class="container-img">
-      <img src ="Logo ghibli blanco.png"/>
-    </div>
-      <div class="container" >
-      Studio Ghibli was founded in 1985 by animated film directors Isao Takahata and Hayao Miyazaki, and has produced twenty-two feature-length films. Most Studio Ghibli films ranked number one at the box office in Japan in the year in which they were released. Studio Ghibli films have garnered numerous awards and critical acclaim from film critics and animation specialists around the world.
-        </div>
+
+    <header id="banner">
+<p>WORLD OF GHIBLI</p>
+    </header>
+
+<main>
+  <!--Contenido Home-->
+    <section id="home">
+       <div class="container-img">
+       <img src ="imagenes/logo ghibli negro.png"/>
+       </div>
+    </section>
   
-    <div id="root"></div>
+  <div class="containers">
+       <img src= "imagenes/ghibli personajes.png">
+  </div>
+
+<div class="container" >
+    Studio Ghibli was founded in 1985 by animated film directors Isao Takahata and Hayao Miyazaki, and has produced twenty-two feature-length films. Most Studio Ghibli films ranked number one at the box office in Japan in the year in which they were released. Studio Ghibli films have garnered numerous awards and critical acclaim from film critics and animation specialists around the world.
+</div>
+
+
+<section>
+<select name="directors" id="director-select">
+    <option value="filter-directors">Filter by Director</option>
+    <option value="Gorō Miyazaki">Gorō Miyazaki</option>
+    <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+    <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+    <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+    <option value="Isao Takahata">Isao Takahata</option>
+    <option value="Yoshifumi Kondō">Yoshifumi Kondō</option>
+</select>
+</section>
+
+<section>
+<select name="orderAlpha" id="alpha-select" placeholder="Order By">
+<option value="A-Z">Order By (A-Z)</option>
+<option value="Z-A">Order By (Z-A)</option>
+</select>
+</section>
+
+<section>
+  <input type="text" id="search-film" class="search" placeholder="Search Film" maxlength="35" >  
+</section>
+</main>
+
+<!--Container of cards-->
+    <div class="root" id="root">
+    </div>
     <script src="main.js" type="module"></script>
+
   </body>
 </html>
