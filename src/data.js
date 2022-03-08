@@ -3,9 +3,10 @@ export function filterData(data,director) {
   const filterData = data.filter((movies) => movies.director === director);
   return filterData;
 }
+
+//BUSCA POR PELICULA
 export function filterFilm(data,search) {
   const filterFilms = data.filter((element) => (element.title).toLowerCase().includes((search).toLowerCase()));
-  console.log("hola",filterFilms)
   return filterFilms;
 
   
