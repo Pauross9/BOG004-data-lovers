@@ -12,17 +12,15 @@ export function filterFilm(data,search) {
   
 }
 //ORDENA DE LA A-Z 
-export const sortData = (orderData) => {
+export const sortData = (orderData) => { 
   const resultData = orderData.sort(function (a, b) {
     if (a.title < b.title) {
       return -1;
     }
     if (a.title > b.title) {
       return 1;
-    } 
-    
-      return 0;
-    
-  });
+    }
+
+   })
   return resultData;
 }
