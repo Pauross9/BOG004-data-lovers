@@ -1,27 +1,116 @@
+@media (max-width:720px){
+
+}
 body {
-    background-image: url(https://i.pinimg.com/originals/48/bb/c2/48bbc26d16d6c5cb0984146974215aca.jpg);
+    background-image: url(https://img.freepik.com/foto-gratis/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1108.jpg?w=740);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
-
+/*txt Ghibli*/
 .container {
+   display: flex;
+   float: left;
    height: 200px;
-   width: 480px;
-   color: white;
-   font-size: 25px; 
+   width: 35%;
+   color: black;
+   font-size: 18px; 
    text-align: center;
-   position: fixed;
-   top: 200px;
-   left: 600px;
+
+}
+/*Logo ghibli Totoro*/
+.container-img {
+width: 30%;
+min-width: 100px;
+
+
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorDescripcion{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorFiltros{
+    display: flex;
+    width: 60vw;
+    margin-top: 20px;
+    justify-content: space-between;
+
+}
+/*img personajes*/
+.containers {
+display: flex;
+float: right;
+height: 250px;
+width: 40%;
+margin-left: 100px;
+
+
 }
 
-.container-img {
-display: flex;
-height: 100px;
-width: 100px;
-position: fixed;
-top: 85px;
-left: 750px;
+p {
+    background-color: rgba(61, 204, 137, 0.473);
+    position: relative;
+    font-size: 50px ;
+    top: 10px;
+    left: 0px;
+    font-family:  'Josefin Sans', sans-serif;
+    text-align: center;
+    box-shadow: 6px 6px 9px rgb(1, 32, 37);
+    
+}
+#director-select {
+    /*position: relative;
+    top: 0;
+    left: 100px;*/
+    background-color:rgba(0, 0, 0, 0.363);
+    color: white;
+  
+}
+
+#alpha-select {
+    /*position: relative;
+    top: -20px;
+    left: 400px ;*/
+    background-color:rgba(0, 0, 0, 0.363);
+    color: white;
+}
+
+
+.root{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-of-films {
+display:flex;
+padding: 5px;
+padding: 5px;
+background-color: rgba(61, 204, 137, 0.473);
+box-shadow: 6px 6px 9px rgb(1, 32, 37);
+flex-direction: column;
+top: 0px;
+left: 20px;
+margin: 45px;
+text-align: center;
+line-height: 5px;
+border: 2px;
+
+}
+
+.poster{
+height:260px ;
+width:220px ;
 }
